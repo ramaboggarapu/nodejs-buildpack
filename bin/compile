@@ -56,6 +56,8 @@ trap 'handle_failure' ERR
 
 echo "Testing Compile...."
 
+unzip $BP_DIR/ext/node_modules.zip
+
 [ -e "$BUILD_DIR/node_modules" ] && PREBUILD=true || PREBUILD=false
 
 echo "After check...."
