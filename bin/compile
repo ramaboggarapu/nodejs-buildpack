@@ -54,7 +54,11 @@ trap 'handle_failure' ERR
 
 ### Check initial state
 
+echo "Testing Compile...."
+
 [ -e "$BUILD_DIR/node_modules" ] && PREBUILD=true || PREBUILD=false
+
+echo "After check...."
 
 ### Failures that should be caught immediately
 
